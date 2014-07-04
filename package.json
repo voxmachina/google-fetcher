@@ -1,0 +1,12 @@
+{
+  "name": "google-fetcher",
+  "version": "0.0.1",
+  "description": "Pings every url container in a given sitemap file as a google user agent",
+  "main": "main.js",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "request": "^2.36.0",
+    "xml2js": "^0.4.4"
+  }
+}
