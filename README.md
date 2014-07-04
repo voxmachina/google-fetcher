@@ -1,8 +1,22 @@
 google-fetcher
-==============
+=========
 
 Pings pages from a given sitemap as a google user agent
 
+Installation
+---
+```sh
 npm install
+```
 
-Usage: node main.js <sitemap>, example: node main.js sitemap.xml
+Usage
+---
+```sh
+node main.js
+```
+
+Example
+---
+```sh
+node main.js sitemap.xml
+```
