@@ -2,6 +2,17 @@ var fs    = require('fs'),
   xml2js  = require('xml2js'),
   request = require('request');
 
+/**
+ * Patches stupid memory leak warning, possible to be fixed in near node version
+ * source: https://github.com/chriso/node.io/issues/96
+ */
+var EventEmitter = require('events').EventEmitter
+  , on = EventEmitter.prototype.on;
+EventEmitter.prototype.on = function () {
+    this._maxListeners = Infinity;
+    on.apply(this, arguments);
+};
+
 var parser = new xml2js.Parser();
 
 var Requester = {
