@@ -8,5 +8,13 @@
   "devDependencies": {
     "request": "^2.36.0",
     "xml2js": "^0.4.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voxmachina/google-fetcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/voxmachina/google-fetcher/issues"
+  },
+  "homepage": "https://github.com/voxmachina/google-fetcher"
 }
